@@ -1,4 +1,8 @@
+// import { useState } from "react";
+// import React, { useState } from "react";
 import cardImg from "../assets/Icon (Stroke).png"
+// const [cartItems] = useState([]);
+
 const NavBar = () => {
     return (
         <div className="navbar max-w-10/12 mx-auto">
@@ -17,6 +21,7 @@ const NavBar = () => {
             <div className="navbar-end gap-5">
                 <div className="flex gap-2">
                     <img className="w-[20px] h-[20px]" src={cardImg} alt="" />
+                    
                     <a href="">Login</a>
                 </div>
                 <a className="btn bg-red-500 rounded-full text-white">Get Started</a>

@@ -5,10 +5,7 @@ const Card = ({ cartItems, setCartItems }) => {
   const handlePrice = () => {
     setCartItems([]);
   };
-  // const handleDelete = (item) => {
-  //   const filterArray = cartItems.filter(c => c.id !== item.id)
-  //   setCartItems(filterArray)
-  // }
+
   const handleDelete = (item) => {
   const filterArray = cartItems.filter(c => c.id !== item.id);
   setCartItems(filterArray);

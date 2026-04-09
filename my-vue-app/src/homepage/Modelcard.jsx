@@ -78,7 +78,7 @@ const ModelCard = ({ model, cartItems, addToCart }) => {
         ${cartItems.find(item => item.id === model.id) ? 'bg-green-600 text-black' :  'bg-purple-500 text-white'}
           `}
       >
-        {cartItems.find(item => item.id === model.id) ? "Already Buy" : clicked ? "Add to Cart" : "Buy Now"}
+        {cartItems.find(item => item.id === model.id) ? "Already Buy" : isSubscribed ? "Add to Cart" : "Buy Now"}
       </button>
     </div>
   )
