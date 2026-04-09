@@ -24,7 +24,7 @@ const Card = ({ cartItems, setCartItems }) => {
           <h1 className="text-2xl font-bold">Your Cart</h1>
           {
             cartItems.map(item =>
-              <div className="flex gap-10 m-5 rounded-2xl bg-gray-100 py-5 " key={item.id}>
+              <div className="flex gap-10 px-5 m-5 rounded-2xl bg-gray-100 py-5 " key={item.id}>
                 <div>
                   <img className="h-2- w-20 object-contain" src={item.image} alt="" />
                 </div>
