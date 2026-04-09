@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
                     <div className='space-y-2'>
                         <h1 className='text-2xl'>Social Links</h1>
-                        <div className='flex'>
+                        <div className='flex space-x-2'>
                             <a href=""><img src={facebookImg} alt="" /></a>
                             <a href=""><img src={instagramImg} alt="" /></a>
                             <a href=""><img src={twiterImg} alt="" /></a>
