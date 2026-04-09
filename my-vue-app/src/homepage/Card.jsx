@@ -12,7 +12,7 @@ const Card = ({ cartItems, setCartItems }) => {
   const handleDelete = (item) => {
   const filterArray = cartItems.filter(c => c.id !== item.id);
   setCartItems(filterArray);
-  toast.info(`${item.name} removed from cart!`);  
+  toast.info(`Cart Remove successful`);  
 }
   return (
     <div className="py-10 max-w-7xl mx-auto border m-10 rounded-4xl">
