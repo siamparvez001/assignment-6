@@ -1,5 +1,5 @@
 import React from "react"
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 const Card = ({ cartItems, setCartItems }) => {
   const totalPrice = cartItems.reduce((sum, item) => sum + item.price, 0)
   const handlePrice = () => {
@@ -12,7 +12,7 @@ const Card = ({ cartItems, setCartItems }) => {
   const handleDelete = (item) => {
   const filterArray = cartItems.filter(c => c.id !== item.id);
   setCartItems(filterArray);
-//   toast.info(`${item.name} removed from cart!`);  // এখানে টোস্ট
+  toast.info(`${item.name} removed from cart!`);  
 }
   return (
     <div className="py-10 max-w-7xl mx-auto border m-10 rounded-4xl">

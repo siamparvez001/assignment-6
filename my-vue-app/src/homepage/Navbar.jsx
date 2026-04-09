@@ -16,7 +16,7 @@ const NavBar = () => {
             </div>
             <div className="navbar-end gap-5">
                 <div className="flex gap-2">
-                    <img src={cardImg} alt="" />
+                    <img className="w-[20px] h-[20px]" src={cardImg} alt="" />
                     <a href="">Login</a>
                 </div>
                 <a className="btn bg-red-500 rounded-full text-white">Get Started</a>

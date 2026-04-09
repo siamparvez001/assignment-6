@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
-import ModelCard from "./ModelCard"
-// import ModelCard from "./Modelcard"
+
+import ModelCard from "./Modelcard"
+
 
 const Models = ({ modelPromise, cartItems, addToCart }) => {
   const [models, setModels] = useState([])

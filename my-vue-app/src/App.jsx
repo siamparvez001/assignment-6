@@ -35,9 +35,7 @@ function App() {
       <Primium></Primium>
       <div>
         <div className="tabs tabs-box w-fit mx-auto bg-transparent justify-center">
-          <input type="radio" name="my_tabs_1" className="tab rounded-full w-30" aria-label="Model" checked={activeTab === "model"
-
-          }
+          <input type="radio" name="my_tabs_1" className="tab rounded-full w-30" aria-label="Model" checked={activeTab === "model"}
             onChange={() => setActiveTab("model")} defaultChecked />
           <input type="radio" name="my_tabs_1" className="tab rounded-full w-30" aria-label={`Cart (${cartItems.length})`} checked={activeTab === "cart"
 
@@ -47,6 +45,7 @@ function App() {
 
 
         </div>
+        
       </div>
       {activeTab === "model" && <Models modelPromise={modelPromise} cartItems={cartItems} addToCart={addToCart}></Models>}
       {activeTab === "card" && <Card cartItems={cartItems} setCartItems={setCartItems}></Card>}

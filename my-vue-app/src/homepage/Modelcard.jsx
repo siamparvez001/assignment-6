@@ -1,15 +1,13 @@
-
-
-
 import React from "react"
-// import { toast } from "react-toastify";
+
+import { toast } from "react-toastify";
 const ModelCard = ({ model, cartItems, addToCart }) => {
   const isSubscribed = cartItems.find(item => item.id === model.id)
 
   return (
-    <div className="border p-4 rounded-2xl space-y-2">
+    <div className="shadow-xl p-4 rounded-2xl space-y-2 hover:-translate-y-2 transition-transform duration-300 ">
       <div className="flex justify-between">
-        <img src={model.image} alt={model.name} className="w-20 h-20 object-cover" />
+        <img  src={model.image} alt={model.name} className="w-20 h-20 object-cover" />
         <h1>{model.tag}</h1>
       </div>
       <h1 className="text-2xl font-bold">{model.name}</h1>
@@ -31,7 +29,7 @@ const ModelCard = ({ model, cartItems, addToCart }) => {
       <button
         onClick={() => {
           addToCart(model);
-        //   toast.success("Added to cart!");  
+          toast.success("Added to cart!");  
         }}
         disabled={isSubscribed}
         className="card-Butn btn w-full rounded-2xl my-5">
