@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+.footer {
+    background: #101727;
+}
+.start{
+    background: linear-gradient(to right, #4F39F6, #9514FA);
+    color: white;
+}
+.number {
+    background: linear-gradient(to right, #4F39F6, #9514FA);
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: auto;
+}
+.pro{
+    font-size: 15px;
+    background: linear-gradient(to right, #4F39F6, #9514FA);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card-butn{
+    background: linear-gradient(to right, #4F39F6, #9514FA);
+    color: white;
+    font-size: 15px;
+    padding:20px 0 ;
+}
+.most{
+    background: #FEF3C6;
+    color: #BB4D00;
+    padding: 6px 10px;
+}
+.card-Butn{
+    background: linear-gradient(to right, #4F39F6, #9514FA);
+    color: white;
+    font-size: 20px;
+    padding:20px 0 ;
+}
+.ratting {
+    background: linear-gradient(to right, #4F39F6, #9514FA);
+}
+.proceed{
+    background: linear-gradient(to right, #4F39F6, #9514FA);
+}
+.product{
+    background: linear-gradient(to right, #4F39F6, #9514FA);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.digitools {
+    background: linear-gradient(to right, #4F39F6, #9514FA);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-border {
+  border-radius: 30px;
+  border-image: linear-gradient(to right, #4F39F6, #9514FA) 0.5;
+  
+}
