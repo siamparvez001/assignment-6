@@ -8,7 +8,7 @@ import Simple from "./homepage/Simple"
 import Steps from "./homepage/Steps"
 import Card from "./homepage/Card"
 import Primium from "./homepage/Primium"
-// import ModelCard from "./homepage/Modelcard"
+
 import { useState } from "react"
 const getModels = async () => {
   const res = await fetch("/model.json")
@@ -18,7 +18,7 @@ const modelPromise = getModels()
 function App() {
   const [activeTab, setActiveTab] = useState("model")
   const [cartItems, setCartItems] = useState([])
-  // console.log(activeTab)
+  
   const addToCart = (model) => {
     setCartItems((prev) => {
       if (!prev.find(item => item.id === model.id)) {
