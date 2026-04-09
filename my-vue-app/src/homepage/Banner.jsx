@@ -4,7 +4,7 @@ import circleImg from "../assets/Group 5.png"
 import playBtnImg from "../assets/Play.png"
 const Banner = () => {
     return (
-        <div className='mt-10 grid sm:grid-cols-1 md:grid-cols-2 w-full mx-auto items-center'>
+        <div className='mt-10 py-15 bg-gray-100 grid sm:grid-cols-1 md:grid-cols-2 w-full mx-auto items-center'>
             <div className=''>
                 <div className='space-y-5 px-5 flex flex-col justify-center mx-auto  md:w-1/2'>
                     <div className='flex  gap-2 bg-purple-200 rounded-2xl w-fit py-[10px] px-[15px]'>
